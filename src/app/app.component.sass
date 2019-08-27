@@ -1,11 +1,59 @@
 .home
-    height: 100vh
-    width: 100vw
-    background-color: #13adf7c4
-    text-align: center
+  margin: 0
+  height: 100vh
+  width: 100vw
+  background-color: #13adf7c4
+  text-align: center
 
-.home__title 
+  &__title 
     margin: 0 auto
-    padding: 3rem
+    padding: 3rem 0 
+    height: 10vh
     font-size: 3rem
-    color: #df6640
+    color: #7826e8
+    background: none
+
+  &__input-container
+    margin: 0 auto
+    padding: 2rem
+    border-radius: 1rem
+    width: 20rem
+    height: 17rem
+    background-color: #ff8d18c4
+
+.hint
+  color: #372056
+  font-size: 2rem
+
+.input 
+  margin: 2rem auto
+  padding: .3rem
+  border: none
+  border-bottom: 2px solid #8b3434
+  width: 15rem
+  display: block
+  font-size: 1.5rem
+  background-color: #8b343400
+  background-image: linear-gradient(#ff000000, #ff580052)
+
+  &:focus 
+    border-color: #ff4646
+    background: none
+    outline: none
+
+.btn 
+  margin: 5rem auto
+  border-radius: 2rem
+  border: 2px solid #8b3434
+  padding: .7rem
+  display: block
+  width: 8rem  
+  font-size: 1.4rem
+  background-color: #b8e4f5
+
+  &:focus 
+    outline: none
+  
+  &:hover
+    cursor: pointer
+    background-color: red
