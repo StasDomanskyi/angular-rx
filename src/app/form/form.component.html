@@ -3,3 +3,7 @@
   <input [(ngModel)]="field" type="text" placeholder="cars.." class="input-container__input input" id="input">
   <input type="submit" value="Send" (click)="onSubmit()" class="input-container__btn btn">
 </div>
+
+<div *ngIf="images">
+  Images are here!
+</div>
