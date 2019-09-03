@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ImageService } from '../../services/image.service';
+import { ImageService } from '../../core/imageService/image.service';
 import { async } from 'q';
 
 @Component({
