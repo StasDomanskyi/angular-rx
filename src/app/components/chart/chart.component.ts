@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-map',
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.sass']
+  selector: 'app-chart',
+  templateUrl: './chart.component.html',
+  styleUrls: ['./chart.component.sass']
 })
-export class MapComponent implements OnInit {
+export class ChartComponent implements OnInit {
 
   constructor() { }
 

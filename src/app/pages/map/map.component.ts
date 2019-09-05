@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-things',
-  templateUrl: './things.component.html',
-  styleUrls: ['./things.component.sass']
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.sass']
 })
-export class ThingsComponent implements OnInit {
+export class MapComponent implements OnInit {
   
   constructor() { }
 

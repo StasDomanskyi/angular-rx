@@ -11,17 +11,19 @@ import { MenuComponent } from './components/menu/menu.component';
 import { FormComponent } from './components/form/form.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
-import { ThingsComponent } from './pages/map/map.component';
-import { MapComponent } from './components/chart/chart.component';
+import { MapComponent } from './pages/map/map.component';
+import { ChartComponent } from './components/chart/chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ChartComponent,
     FormComponent,
     HomeComponent,
+    MapComponent,
     MenuComponent,
     NotificationsComponent,
-    MapComponent
+    
   ],
   imports: [
     AppRoutingModule,
