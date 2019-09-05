@@ -1,30 +1,34 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormComponent } from './components/form/form.component';
 import { FormsModule } from '@angular/forms';
+import { AgmCoreModule } from '@agm/core';
 import { ImageService } from './core/imageService/image.service';
+
+import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { FormComponent } from './components/form/form.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
-import { ThingsComponent } from './pages/things/things.component';
-
+import { ThingsComponent } from './pages/map/map.component';
+import { MapComponent } from './components/chart/chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    MenuComponent,
     HomeComponent,
+    MenuComponent,
     NotificationsComponent,
-    ThingsComponent
+    MapComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDXqn7ywSOZd_6o8C9wypree7s1kHrftyA'
+    }),
+    BrowserModule,
     FormsModule,
     HttpClientModule
   ],
